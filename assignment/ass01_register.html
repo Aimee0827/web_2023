@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 페이지</title>
+</head>
+<body>
+<h2>취업 정보 계정 만들기</h2>
+<p> * 필수 입력 항목 </p>
+<p> 기본 정보 </p>
+<body>
+    <form>
+        <label for="name">이름*</label>
+        <input type="text" id="name" name="name" size="8"><br>
+
+        <label for="email">이메일*</label>
+        <input type="email" id="email" name="email" size="15" placeholder="id@domain_name"><br>
+
+        <label for="password">암호*</label>
+        <input type="password" id="password" name="password" size="12"><br>
+
+        <label for="confirm_password">암호 확인*</label>
+        <input type="password" id="confirm_password" name="confirm_password" size="12"><br>
+
+        <label for="phone">모바일 폰*</label>
+        <input type="tel" id="phone" name="phone" size="13" placeholder="010-0000-0000"><br>
+
+        <label for="website">개인 홈페이지 </label>
+        <input type="url" id="website" name="website" size="30" placeholder="http://"><br>
+
+        <label for="address">주소*</label>
+        <input type="text" id="address" name="address" size="30"><br>
+
+        <p> 학 력 </p>
+
+        <label for="school">학교 명*</label>
+        <input type="text" id="school" name="school" size="12"><br>
+
+        <label for="major">전 공*</label>
+        <input type="text" id="major" name="major" size="12"><br>
+
+        <label for="graduation_status">졸업 여부*</label>
+        <select id="graduation_status" name="graduation_status">
+            <option value="---선택---">---선택---</option>
+            <option value="졸업예정">졸업예정</option>
+            <option value="졸업">졸업</option>
+        </select><br>
+
+        <label for="graduation_date">졸업(예정)일</label>
+        <input type="date" id="graduation_date" name="graduation_date"><br>
+
+        <p>업무 경력</p>
+        <label for="company">근무업체명</label>
+        <input type="text" id="company" name="company" size="20"><br>
+
+        <label for="position">직위</label>
+        <input type="text" id="position" name="position" size="10"><br>
+
+        <label for="responsibilities">담당 업무</label>
+        <textarea id="responsibilities" name="responsibilities" rows="10" cols="80">이전 업체에서 담당한 업무를 기술하시오.
+        </textarea><br>
+
+        <!-- 근무 년수 숫자 입력 스핀 버튼 (최소값: 0, 최대값: 10, step: 0.5) -->
+        <label for="work_years">근무 년수</label>
+        <input type="number" id="work_years" name="work_years" min="0" max="10" step="0.5">년<br>
+
+        <p>자기소개서</p>
+
+        <label for="attachment">첨부 파일</label>
+        <input type="file" id="attachment" name="attachment"><br>
+
+
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="제출">
+        <input type="reset" value="재작성">
+
+    </form>
+</body>
+</html>
+
+</body>
+</html>
