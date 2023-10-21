@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <title>회원가입 페이지</title>
         <style>
-        h2, p {
+        h4 {
             font-weight: bold;
             background-color: lightblue;
             width: 800px;
             padding-left: 10px;
         }
-        p {
+
+        p.inline-label {
+            margin-left: 8px;
+            text-align: right;
+            width: 130px;
+            padding-right: 8px;
+            display: inline-block;
+        }
+
+        label.required {
             color: red;
-            font-size: 10pt;
+        }
+
+        input {
+            color: black;
         }
     </style>
 </head>
@@ -54,7 +66,7 @@
 
         <p>
         <label for="address">주소*</label>
-        <input type="text" id="address" name="address" size="30">
+        <inp type="text" id="address" name="address" size="30">
         </p>
 
         <h4> 학 력 </h4>
@@ -108,17 +120,10 @@
             <input type="file" id="attachment" name="attachment"></p>
 
 
-        <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;
-
-        <input type="submit" value="제출">
-            <input type="reset" value="재작성"></p>
+<p style="margin-left: 200px;">
+    <input type="submit" value="제출">
+    <input type="reset" value="재작성">
+</p>
 
     </form>
 </body>
