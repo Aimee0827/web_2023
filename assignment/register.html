@@ -27,6 +27,13 @@
         content: '*';
         color: red;
      }
+
+     [div *= '*'] {
+         color : red
+     }
+     form .sub {
+         color: blue;
+     }
     </style>
 </head>
 <body>
@@ -34,6 +41,14 @@
 <p style="color: red; font-size: 10pt;"> * 필수 입력 항목 </p>
 <h4> 기본 정보 </h4>
 <body>
+
+<form>
+ <div class="sub">고객 기본 정보</div>
+ <div id="basic">
+ <div><span class="lbl">고객명 </span>
+<input type="text" size="6" name="customer"></div>
+ </div>
+</form>
     <form class="information">
         <div class="c1">
         <label for="name">이 름</label>
@@ -57,7 +72,7 @@
         <input type="tel" id="phone" name="phone" size="13" placeholder="010-0000-0000"></div>
 
         <div>
-        <label for="website">개인 홈페이지</label>
+        <label for="website">개인 홈페이지*</label>
         <input type="url" id="website" name="website" size="30" placeholder="http://"></div>
 
         <div class="c1">
